@@ -36,7 +36,6 @@ class Book:
     def bookmark(self, page):
         """
         Place a bookmark by setting the current page.
-        This method encapsulates the logic for safely updating the reading progress.
         """
         if page < 1 or page > self.pages:
             return f"Invalid bookmark. \"{self.title}\" only has {self.pages} pages."
